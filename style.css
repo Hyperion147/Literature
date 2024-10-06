@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+header {
+    background: #538988;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.25rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 80%;
+}
+
+main{
+    padding: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgb(220, 239, 239);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #007bff;
+}
+
+.card img{
+     width: 250px;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+    background: #d3e5f8;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #8eb5df;
+}
